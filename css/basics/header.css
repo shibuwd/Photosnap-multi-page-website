@@ -1,0 +1,136 @@
+/* -------------------------header section------------------------- */
+#header {
+    /* position: fixed; */
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+#header .header {
+    height: auto;
+    background-color: transparent;
+}
+
+#header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    background-color: var(--white);
+}
+
+#header .nav-list ul {
+    position: absolute;
+    background-color: var(--white);
+    width: 100vw;
+    height: 50vh;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .6s cubic-bezier(0, 0.55, 0.45, 1) left;
+    z-index: 9999;
+}
+
+#header .nav-list ul.active {
+    left: 0%;
+}
+
+#header .nav-list ul li a {
+    text-decoration: none;
+    color: var(--pure-black);
+    text-transform: uppercase;
+    padding: .8rem;
+    display: block;
+    font-family: var(--ff-bold);
+    font-weight: var(--fw-700);
+    font-size: var(--font-size-body);
+}
+
+#header .nav-list ul li a::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    letter-spacing: 50px;
+    z-index: -1;
+}
+
+#header .nav-list ul li:hover a::after {
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+
+#header .nav-list ul li a:hover,
+#header .nav-list ul li a:focus {
+    color: var(--dark-grey);
+}
+
+#header .hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#header .hamburger:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    animation: hamburger_puls 3s ease infinite;
+}
+
+#header .hamburger .bar {
+    height: 3px;
+    width: 30px;
+    position: relative;
+    background-color: var(--pure-black);
+    z-index: -1;
+}
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: var(--pure-black);
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+
+#header .hamburger .bar::after {
+    top: 8px;
+}
+
+#header .hamburger .bar::before {
+    bottom: 8px;
+}
+
+#header .hamburger.active .bar::before {
+    bottom: 0;
+}
+
+#header .hamburger.active .bar::after {
+    top: 0;
+}
+
+.nav-btn {
+    display: none;
+}
+
+/* -------------------------end header section------------------------- */

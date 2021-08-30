@@ -1,0 +1,30 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+ 
+ /* -------------------------variables------------------------- */
+ :root {
+     --pure-black: hsl(0, 0%, 0%);
+     --light-black: hsla(0, 0%, 0%, 0.6);
+     --dark-grey: hsla(0, 0%, 87%, 0.6);
+     --light-grey: hsl(0, 0%, 87%);
+     --white: hsl(0, 0%, 100%);
+     --orange-accent: hsl(28, 100%, 79%);
+     --purple-accent: hsl(329, 36%, 59%);
+     --blue-accent: hsl(229, 100%, 68%);
+     --gradient: linear-gradient(26.57deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
+
+     --ff-bold: "DM Sans Bold", sans-serif;
+     --ff-regular: "DM Sans Regular", sans-serif;
+
+     --font-size-body: .938rem;
+     --font-size-v1: 2.5rem;
+     --font-size-v2: 1.5rem;
+     --font-size-v3: 1.125;
+     --font-size-v4: 1rem;
+     --font-size-v5: .75rem;
+
+     /* font weight */
+     --fw-400: 400;
+     --fw-700: 700;
+ }
+
+ /* -------------------------end variables------------------------- */

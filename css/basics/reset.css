@@ -1,0 +1,48 @@
+/* -------------------------reset setting------------------------- */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    font-family: var(--ff-regular);
+    height: 100vh;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-size: var(--font-size-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-bold);
+    line-height: 1.1;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* -------------------------end reset setting------------------------- */
