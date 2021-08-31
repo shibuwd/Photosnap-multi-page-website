@@ -52,6 +52,7 @@
     font-family: var(--ff-bold);
     font-weight: var(--fw-700);
     font-size: var(--font-size-body);
+    letter-spacing: 2px;
 }
 
 #header .nav-list ul li a::after {
