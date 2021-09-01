@@ -21,6 +21,54 @@
  /* -------------------------end global style------------------------- */
 
  
+  /* -------------------------top section------------------------- */
+  .top-text {
+    background-color: var(--pure-black);
+    height: 420px;
+    padding: 2rem 1.7rem;
+    align-items: center;
+  }
+
+.top-text h1 {
+    font-size: var(--font-size-v2);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 3.3px;
+    margin-top: 2rem;
+}
+
+.top-text p {
+    color: var(--dark-grey);
+    margin: 2rem 0;
+}
+
+.top-text a {
+    text-transform: uppercase;
+    font-size: var(--font-size-v6);
+    letter-spacing: 2px;
+    color: var(--white);
+    font-weight: var(--fw-700);
+}
+
+.top-text .a:hover {
+    text-decoration: underline;
+}
+
+svg:hover::after {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+  /* -------------------------end top section------------------------- */
 
 
  
