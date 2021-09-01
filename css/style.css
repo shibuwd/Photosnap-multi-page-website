@@ -21,7 +21,7 @@
  /* -------------------------end global style------------------------- */
 
  
-  /* -------------------------top section------------------------- */
+/* -------------------------top section------------------------- */
   .top-text {
     background-color: var(--pure-black);
     height: 420px;
@@ -96,7 +96,6 @@
 .top .t-three {
     background: var(--white);
 }
-
   /* -------------------------end top section------------------------- */
 
 
@@ -198,7 +197,7 @@
     flex-direction: column;
     text-align: center;
     padding: 0rem 2.5rem;
-    margin-top: 3.5rem;
+    margin: 4rem 0;
 }
 
 .bottom .icon {
@@ -215,7 +214,3 @@
     color: var(--light-black);
 }
  /* -------------------------end bottom section------------------------- */
-
-
-
-
