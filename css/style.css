@@ -26,14 +26,13 @@
     background-color: var(--pure-black);
     height: 420px;
     padding: 2rem 1.7rem;
-    align-items: center;
   }
 
 .top-text h1 {
     font-size: var(--font-size-v2);
     color: var(--white);
     text-transform: uppercase;
-    letter-spacing: 3.3px;
+    letter-spacing: 3.5px;
     margin-top: 2rem;
 }
 
@@ -42,33 +41,137 @@
     margin: 2rem 0;
 }
 
+   .bg-color-2,
+   .bg-color-3 {
+       background: var(--white);
+   }
+
+   .bg-color-2 h1,
+   .bg-color-3 h1 {
+       color: var(--pure-black);
+   }
+
+.bg-color-2 p,
+.bg-color-3 p {
+    color: var(--light-black);
+}
+
 .top-text a {
     text-transform: uppercase;
-    font-size: var(--font-size-v6);
+    font-size: var(--font-size-v7);
     letter-spacing: 2px;
     color: var(--white);
     font-weight: var(--fw-700);
 }
 
-.top-text .a:hover {
+.bg-color-2 a,
+.bg-color-3 a {
+    color: var(--pure-black);
+}
+
+.top-text .cta a {
+    display: flex;
+    align-items: center;
+}
+
+.top-text .cta a:hover {
     text-decoration: underline;
 }
 
-svg:hover::after {
-    -webkit-transform: translateX(-10px);
+.top-text svg {
+    width: 70px;
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s,
+    -webkit-transform .4s
+}
+
+.top-text svg:hover,
+.top-text svg:focus {
     transform: translateX(-10px);
 }
 
-
-
-
-
-
-
-
-
+.top .t-two,
+.top .t-three {
+    background: var(--white);
+}
 
   /* -------------------------end top section------------------------- */
 
 
- 
+    /* -------------------------midddle section------------------------- */
+.middle{
+    display: block;
+    position: relative;
+    -webkit-transition: all .3s;
+    transition: .5s cubic-bezier(0.61, 1, 0.88, 1);
+    cursor: pointer;
+}
+
+.middle:hover {
+    transform: translateY(-20px);
+}
+
+.middle-text {
+    padding: 2rem 1.7rem;
+    position: absolute;
+    width: 100%;
+    height: 99px;
+    left: 0px;
+    top: 221px;
+}
+
+.middle-text h2 {
+    font-size: var(--font-size-v4);
+    color: var(--white);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.middle-text p {
+    color: var(--dark-grey);
+    margin-bottom: 1rem;
+    font-size: var(--font-size-v6);
+}
+
+.middle-text .line {
+    border-bottom: .5px solid var(--white);
+    opacity: 25%;
+    margin-bottom: 1rem;
+}
+
+.middle-text a {
+    text-transform: uppercase;
+    font-size: var(--font-size-v7);
+    letter-spacing: 2px;
+    color: var(--white);
+    font-weight: var(--fw-700);
+}
+
+.middle-text .cta a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-text .cta a:hover {
+    text-decoration: underline;
+}
+
+.middle-text svg {
+    width: 70px;
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s,
+    -webkit-transform .4s
+}
+
+    .middle-text svg:hover,
+    .middle-text svg:focus {
+    transform: translateX(-10px);
+}
+
+
+/* end middle section */
