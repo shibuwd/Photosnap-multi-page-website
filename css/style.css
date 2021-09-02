@@ -145,7 +145,7 @@
 }
 
 .middle-text p {
-    color: var(--dark-grey);
+    color: var(--white);
     margin-bottom: 1rem;
     font-size: var(--font-size-v6);
 }
@@ -214,3 +214,44 @@
     color: var(--light-black);
 }
  /* -------------------------end bottom section------------------------- */
+
+
+ /* media query for tablet */
+@media only screen and (min-width: 768px) {
+     #header .hamburger {
+         display: none;
+     }
+
+     #header .nav-bar {
+         padding: .5rem 1.5rem;
+         display: flex;
+     }
+
+     #header .nav-list {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+
+     #header .nav-list ul {
+         position: initial;
+         display: flex;
+         flex-direction: row;
+         justify-content: unset;
+         height: auto;
+         width: 45vw;
+         background-color: transparent;
+     }
+
+     #header .nav-list ul li {
+         display: inline-block;
+     }
+
+     #header .nav-list ul a:after {
+         display: none;
+     }
+}
+
+
+
+ /* nd media query for tablet */
