@@ -104,7 +104,7 @@
 
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
-    content: '';
+content: '';
     position: absolute;
     height: 100%;
     width: 100%;
@@ -135,3 +135,48 @@
 }
 /* -------------------------end header section------------------------- */
 
+@media only screen and (min-width: 768px) {
+
+#header .hamburger {
+     display: none;
+}
+
+#header .nav-bar {
+    height: 72px;
+    padding: 0 2rem;
+    display: flex;
+}
+
+#header .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .nav-list ul {
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 45vw;
+    background-color: transparent;
+}
+
+#header .nav-list ul li {
+    display: inline-block;
+}
+
+#header .nav-list ul a:after {
+    display: none;
+}
+
+.nav-btn {
+    display: block;
+}
+
+#header .nav-list ul .btn {
+    display: none;
+}
+}
+    /* end header section */
