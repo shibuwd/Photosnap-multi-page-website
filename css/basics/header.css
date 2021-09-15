@@ -135,6 +135,8 @@ content: '';
 }
 /* -------------------------end header section------------------------- */
 
+
+/* -------------------------media query for tablet------------------------- */
 @media only screen and (min-width: 768px) {
 
 #header .hamburger {
@@ -179,4 +181,4 @@ content: '';
     display: none;
 }
 }
-    /* end header section */
+/* -------------------------end media query for tablet------------------------- */

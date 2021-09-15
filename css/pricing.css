@@ -4,15 +4,6 @@
 @import url(./basics/footer.css);
 @import url(./basics/global.css);
 
-
-/* -------------------------top section------------------------- */
-.bg-color-blk {
-    height: 300px;
-}
-
-/* -------------------------end top section------------------------- */
-
-
 /* -------------------------beta section------------------------- */
 .beta {
     position: relative;
@@ -67,15 +58,6 @@
 
 /* ------------------------- media query for tablet ------------------------- */
 @media only screen and (min-width: 768px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        padding: 3rem 3rem;
-    }
-
     .beta-text {
         position: absolute;
         width: 100%;
