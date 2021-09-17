@@ -4,29 +4,6 @@
 @import url(./basics/footer.css);
 @import url(./basics/global.css);
 
-/* -------------------------beta section------------------------- */
-.beta {
-    position: relative;
-}
-
-.beta-text {
-    position: absolute;
-    width: 80%;
-    bottom: 40px;
-    left: 33px;
-    color: var(--white);
-}
-
-.beta-text h6 {
-    font-size: var(--font-size-v2);
-    color: var(--white);
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-/* -------------------------end beta section------------------------- */
-
-
 /* -------------------------subscription section------------------------- */
 .toggle-container {
     display: flex;
@@ -194,6 +171,29 @@ label .ball {
 
 /* ------------------------- end compare section------------------------- */
 
+
+
+/* -------------------------beta section------------------------- */
+.beta {
+    position: relative;
+}
+
+.beta-text {
+    position: absolute;
+    width: 80%;
+    bottom: 40px;
+    left: 33px;
+    color: var(--white);
+}
+
+.beta-text h6 {
+    font-size: var(--font-size-v2);
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* -------------------------end beta section------------------------- */
 
 /* ------------------------- media query for mobile ------------------------- */
 @media only screen and (min-width: 575px) {
