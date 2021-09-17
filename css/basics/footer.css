@@ -49,7 +49,6 @@
      color: var(--dark-grey);
  }
 
-
  .footer-content .cta a {
      display: flex;
      align-items: center;
@@ -121,9 +120,7 @@
 
      /* end footer section */
  }
-
  /* -------------------------end media query for tablet------------------------- */
-
 
 
  /* -------------------------media query for desktop------------------------- */
