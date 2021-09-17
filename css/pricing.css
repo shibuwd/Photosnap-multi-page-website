@@ -267,6 +267,9 @@ label .ball {
     .compare-container {
     padding: 2rem 15rem;
 }
+.beta-text h6 {
+    width: 400px;
+}
 
 }
 
