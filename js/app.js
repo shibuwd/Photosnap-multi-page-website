@@ -23,3 +23,12 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+
+// PRICING TABS SWITCH
+const priceToggle = document.getElementById('toggle');
+const priceContainer = document.querySelector('.price-container');
+
+priceToggle.addEventListener('change', e => {
+priceContainer.classList.toggle('show-yearly');
+});

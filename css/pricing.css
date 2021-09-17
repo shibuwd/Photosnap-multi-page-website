@@ -27,6 +27,136 @@
 /* -------------------------end beta section------------------------- */
 
 
+/* -------------------------subscription section------------------------- */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.toggle-container h2 {
+    text-transform: capitalize;
+    font-size: var(--font-size-v4);
+    color: var(--pure-black);
+}
+
+.toggle-container label {
+    background-color: var(--dark-grey);
+    display: inline-block;
+    position: relative;
+    margin: 0 30px;
+    width: 64px;
+    height: 32px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+label .ball {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: var(--pure-black);
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.toggle-container input {
+    position: absolute;
+    left: -9999px;
+}
+
+.toggle-container input:checked+label .ball {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+.price-container {
+    padding: 0 1.2rem;
+}
+
+.price {
+    background: var(--dark-grey);
+    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.price h3 {
+    font-size: var(--font-size-v3);
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.price p {
+    color: var(--para-color-2);
+    padding: 0 2rem 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.price .pricing span {
+    font-size: var(--font-size-v1);
+    font-weight: var(--fw-700);
+    letter-spacing: 2.5px;
+}
+
+.bg-black {
+    background: var(--pure-black);
+    position: relative;
+}
+
+.bg-black::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--gradient);
+}
+
+.bg-black .btn {
+    background: var(--white);
+    color: var(--pure-black);
+}
+
+.bg-black h3,
+.bg-black p,
+.bg-black span {
+    color: var(--white);
+}
+
+
+.subs-container .price .yearly {
+    display: none;
+}
+
+.show-yearly .price .yearly {
+    display: block;
+}
+
+.show-yearly .price .monthly {
+    display: none;
+}
+
+
+
+
+/* ------------------------- end subscription section------------------------- */
+
+
+
+
+
 /* ------------------------- media query for mobile ------------------------- */
 @media only screen and (min-width: 575px) {
     .bg-color-blk {
