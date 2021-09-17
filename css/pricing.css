@@ -17,7 +17,7 @@
     color: var(--white);
 }
 
-.beta-text h4 {
+.beta-text h6 {
     font-size: var(--font-size-v2);
     color: var(--white);
     text-transform: uppercase;
@@ -148,13 +148,51 @@ label .ball {
     display: none;
 }
 
-
-
-
 /* ------------------------- end subscription section------------------------- */
 
 
+/* ------------------------- compare section------------------------- */
+.compare-container {
+    padding: 2rem 1.5rem;
+}
 
+.compare h4 {
+    font-size: var(--font-size-v2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--pure-black);
+    padding: 1rem 0;
+}
+
+.plan-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 1rem;
+}
+
+.plan-desc span {
+    text-align: left;
+    width: 100px;
+    font-size: var(--font-size-v7);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    padding-top: 1rem;
+}
+
+.plan-desc img {
+    width: 16px;
+    height: 12px;
+    margin-right: 30px;
+}
+
+/* ------------------------- end compare section------------------------- */
 
 
 /* ------------------------- media query for mobile ------------------------- */
@@ -202,3 +240,45 @@ label .ball {
 }
 
 /* ------------------------- end media query for tablet ------------------------- */
+
+/* ------------------------- end media query for desktop ------------------------- */
+@media only screen and (min-width: 1150px) {
+    .price-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .price {
+        width: 350px;
+        height: 410px;
+        margin-right: 1rem;
+    }
+
+    .bg-black {
+        height: 470px;
+        width: 350px;
+    }
+
+    .btn {
+        width: 20vw;
+    }
+    .compare-container {
+    padding: 2rem 15rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- end media query for desktop ------------------------- */
