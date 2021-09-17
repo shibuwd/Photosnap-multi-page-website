@@ -10,7 +10,7 @@
     height: 495px;
 }
 
-.stories-top-text important {
+.stories-top-text span {
     color: var(--white);
     text-transform: uppercase;
     margin-bottom: 1rem;
