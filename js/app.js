@@ -25,7 +25,7 @@ menu_item.forEach((item) => {
 });
 
 
-// PRICING TABS SWITCH
+// SUBS TABS SWITCH
 const priceToggle = document.getElementById('toggle');
 const priceContainer = document.querySelector('.price-container');
 
