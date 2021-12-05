@@ -1,0 +1,15 @@
+@import "./abstracts/variable";
+@import "./abstracts/breakpoint";
+@import "./abstracts/mixins";
+
+@import "./base/typhography";
+@import "./base/reset";
+
+@import "./pages/header";
+@import "./pages/home";
+@import "./pages/footer";
+
+@import "./component/buttons";
+@import "./component/animation";
+
+

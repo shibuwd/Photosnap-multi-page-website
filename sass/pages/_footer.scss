@@ -1,0 +1,97 @@
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 540px;
+    background: $color-pure-black;
+
+
+    .footer-logo {
+        img {
+            width: 170px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .social-icons {
+        /* width: 20px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+
+        li {
+            a {
+                filter: brightness(0) invert(1);
+                -webkit-filter: brightness(0) invert(1);
+                transition: .6s cubic-bezier(0.12, 0, 0.39, 0);
+
+                &:hover,
+                &:focus {
+                    filter: brightness(1) invert(0);
+                    -webkit-filter: brightness(1) invert(0);
+                }
+            }
+        }
+    }
+
+    .footer-link {
+        text-align: center;
+
+        a {
+            font-size: $font-size-v7;
+            text-transform: uppercase;
+            color: $color-white;
+            letter-spacing: 2px;
+            line-height: 2rem;
+            font-weight: $fw-700;
+
+            &:hover,
+            &:focus {
+                color: $color-dark-grey;
+            }
+        }
+    }
+
+    .useful-links {
+        .cta {
+            a {
+                display: flex;
+                text-align: center;
+                text-transform: uppercase;
+                color: $color-white;
+                font-size: $font-size-v7;
+                font-weight: $fw-700;
+                letter-spacing: 2px;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .copyright {
+            color: $color-dark-grey;
+            margin-top: 2.5rem;
+        }
+
+    }
+}
+
+@include media('>tablet') {
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 3rem;
+        height: 285px;
+
+        .social-icons {
+            margin-bottom: 0;
+            margin-top: 2.5rem;
+        }
+    }
+}

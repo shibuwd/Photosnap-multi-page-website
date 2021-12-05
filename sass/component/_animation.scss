@@ -1,0 +1,12 @@
+ .arrow {
+     width: 50px;
+     -webkit-transition: -webkit-transform .4s;
+     transition: -webkit-transform .4s;
+     transition: transform .4s;
+     transition: transform .4s,
+         -webkit-transform .4s
+ }
+
+ .arrow:hover {
+     transform: translateX(10px);
+ }

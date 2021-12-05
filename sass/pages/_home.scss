@@ -1,0 +1,204 @@
+/* -------------------------top section------------------------- */
+
+.top {
+    .bg-color-blk {
+        @include bgColor;
+        background-color: $color-pure-black;
+
+        h1 {
+            @include hdeaingColor;
+            color: $color-white;
+        }
+
+        p {
+            @include paraColor;
+            color: $color-para-color;
+        }
+
+        @include media('>largePhone') {
+            width: 60%;
+            height: auto;
+        }
+
+        @include media('>tabletBig') {
+            width: 40%;
+            height: auto;
+            padding: 0 3rem;
+        }
+    }
+
+    .bg-color-white {
+        @include bgColor;
+        background-color: $color-white;
+
+        h1 {
+            @include hdeaingColor;
+            color: $color-pure-black;
+        }
+
+        p {
+            @include paraColor;
+            color: $color-para-color-2;
+        }
+
+        @include media('>largePhone') {
+            width: 60%;
+            height: auto;
+        }
+
+        @include media('>tabletBig') {
+            width: 40%;
+            height: auto;
+            padding: 0 3rem;
+        }
+    }
+
+    @include media('>largePhone') {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    @include media('>largePhone') {
+        .top-img {
+            width: 40%;
+            height: auto;
+
+            @include media('>tabletBig') {
+                width: 60%;
+                height: auto;
+            }
+        }
+
+        @include media('>largePhone') {
+            &:nth-of-type(2) {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+/* -------------------------end top section------------------------- */
+
+
+
+/* -------------------------end middle section------------------------- */
+
+.middle-container {
+
+    .middle {
+        display: block;
+        position: relative;
+        transition: .5s cubic-bezier(0.61, 1, 0.88, 1);
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            background: $color-gradient;
+            opacity: 0;
+            transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+        }
+
+        &:hover,
+        &:focus {
+            transform: translateY(-25px);
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+
+        .middle-text {
+            position: absolute;
+            width: 80%;
+            bottom: 40px;
+            left: 33px;
+            color: $color-white;
+
+            .cta-white {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+
+            h2 {
+                font-size: $font-size-v4;
+                color: $color-white;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+            }
+
+            p {
+                color: $color-white;
+                margin-bottom: 1rem;
+                font-size: $font-size-v6;
+            }
+
+            .line {
+                border-bottom: .5px solid $color-white;
+                opacity: 25%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @include media('>largePhone') {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    @include media('>tabletBig') {
+        display: flex;
+    }
+}
+
+/* -------------------------end middle section------------------------- */
+
+
+/* -------------------------bottom section------------------------- */
+
+.bottom-content {
+    .bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0rem 2.5rem;
+        margin: 4rem 0;
+
+        .icon {
+            width: 72px;
+        }
+
+        h3 {
+            margin-top: 3rem;
+            font-size: $font-size-v4;
+            text-transform: capitalize;
+        }
+
+        p {
+            color: $color-light-black;
+            margin-top: 1rem;
+        }
+
+        @include media('>tabletBig') {
+            margin: 4rem auto;
+        }
+    }
+
+    @include media('>tabletBig') {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* -------------------------end bottom section------------------------- */

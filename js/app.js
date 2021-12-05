@@ -1,6 +1,10 @@
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const hamburger = document.querySelector(
+	'.header .nav-bar .nav-list .hamburger'
+);
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const menu_item = document.querySelectorAll(
+	'.header .nav-bar .nav-list ul li a'
+);
 const header = document.querySelector('.header');
 
 hamburger.addEventListener('click', () => {
@@ -12,23 +16,22 @@ document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
 		header.style.backgroundColor = '#fff';
-} else {
+	} else {
 		header.style.backgroundColor = 'transparent';
 	}
 });
 
-menu_item.forEach((item) => {
+menu_item.forEach(item => {
 	item.addEventListener('click', () => {
 		hamburger.classList.toggle('active');
 		mobile_menu.classList.toggle('active');
 	});
 });
 
-
 // SUBS TABS SWITCH
 const priceToggle = document.getElementById('toggle');
 const priceContainer = document.querySelector('.price-container');
 
 priceToggle.addEventListener('change', e => {
-priceContainer.classList.toggle('show-yearly');
+	priceContainer.classList.toggle('show-yearly');
 });

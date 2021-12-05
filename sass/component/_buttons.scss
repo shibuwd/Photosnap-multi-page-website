@@ -1,0 +1,38 @@
+.btn {
+    background-color: $color-pure-black;
+    text-transform: uppercase;
+    color: $color-white;
+    width: 80vw;
+    text-align: center;
+    font-family: $ff-bold;
+    font-weight: $fw-700;
+    padding: 1rem 2rem;
+    border: none;
+    transition: .6s cubic-bezier(0.11, 0, 0.5, 0);
+
+    &:hover,
+    &:focus {
+        background-color: $color-light-grey;
+        color: $color-pure-black;
+    }
+}
+
+.cta-white a {
+    @include ctaBtn;
+    color: $color-white;
+}
+
+.cta-black a {
+    @include ctaBtn;
+    color: $color-pure-black;
+}
+
+
+
+.middle-text {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

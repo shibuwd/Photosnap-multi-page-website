@@ -18,13 +18,11 @@ picture {
 }
 
 body {
-    font-family: var(--ff-regular);
+    font-family: $ff-regular;
     height: 100vh;
-    text-rendering: optimizeSpeed;
-    scroll-behavior: smooth;
     line-height: 1.5;
     overflow-x: hidden;
-    font-size: var(--font-size-body);
+    font-size: $font-size-body;
 }
 
 h1,
@@ -33,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--ff-bold);
+    font-family: $ff-bold;
     line-height: 1.5;
 }
 

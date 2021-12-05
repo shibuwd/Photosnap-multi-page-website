@@ -1,0 +1,14 @@
+
+ .middle {
+     width: 60%;
+     height: auto;
+
+     .bg-color-blk {
+         width: 60%;
+         height: auto;
+     }
+
+     &:nth-of-type(2) {
+         flex-direction: row;
+     }
+ }
