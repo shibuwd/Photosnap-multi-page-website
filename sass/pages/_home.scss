@@ -149,8 +149,8 @@
 
     @include media('>largePhone') {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
@@ -180,7 +180,7 @@
         }
 
         h3 {
-            margin-top: 3rem;
+            margin-top: 2.8rem;
             font-size: $font-size-v4;
             text-transform: capitalize;
         }
