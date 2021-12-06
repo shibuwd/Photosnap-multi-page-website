@@ -710,19 +710,6 @@ li {
   }
 }
 
-@media (min-width: 921px) {
-  .middle-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-}
-
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
