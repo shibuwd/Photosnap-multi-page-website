@@ -1,0 +1,77 @@
+.stories-top {
+
+    .stories-top-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bg-color-blk {
+        @include bgColor;
+        background-color: $color-pure-black;
+        color: $color-white;
+
+        span {
+            color: $color-white;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-weight: $fw-700;
+            font-size: $font-size-v7;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: $font-size-v2;
+            letter-spacing: 3.3px;
+            text-transform: uppercase;
+        }
+
+        p {
+            padding: 1rem 0;
+            letter-spacing: 1px;
+        }
+
+        .author {
+            font-size: $font-size-v6;
+            margin: 0;
+            padding: 0;
+
+            span {
+                color: $color-white;
+            }
+        }
+
+        @include media('>largePhone') {
+            position: absolute;
+            left: 33px;
+            color: $color-white;
+            width: 350px;
+            height: auto;
+            margin: 0 auto;
+            background: none;
+        }
+    }
+
+    @include media('>largePhone') {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+
+    @include media('>tablet') {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@include media('>tabletBig') {
+    .middle-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}

@@ -35,3 +35,4 @@ const priceContainer = document.querySelector('.price-container');
 priceToggle.addEventListener('change', e => {
 	priceContainer.classList.toggle('show-yearly');
 });
+

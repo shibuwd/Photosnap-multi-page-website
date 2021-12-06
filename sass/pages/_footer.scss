@@ -38,6 +38,7 @@
 
     .footer-link {
         text-align: center;
+        margin-bottom: 2rem;
 
         a {
             font-size: $font-size-v7;
@@ -46,6 +47,7 @@
             letter-spacing: 2px;
             line-height: 2rem;
             font-weight: $fw-700;
+            
 
             &:hover,
             &:focus {
@@ -58,6 +60,8 @@
         .cta {
             a {
                 display: flex;
+                align-items: center;
+                justify-content: center;
                 text-align: center;
                 text-transform: uppercase;
                 color: $color-white;
@@ -74,7 +78,7 @@
 
         .copyright {
             color: $color-dark-grey;
-            margin-top: 2.5rem;
+            margin-top: 2.8rem;
         }
 
     }
@@ -91,7 +95,15 @@
 
         .social-icons {
             margin-bottom: 0;
-            margin-top: 2.5rem;
+            margin-top: 3.2rem;
+        }
+
+        .footer-link {
+            margin-bottom: 0;
+
+            a {
+                font-size: $font-size-v5;
+            }
         }
     }
 }
