@@ -1,0 +1,210 @@
+.subs {
+    .toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+
+        h2 {
+            text-transform: capitalize;
+            font-size: $font-size-v4;
+            color: $color-pure-black;
+        }
+
+        label {
+            background-color: $color-dark-grey;
+            display: inline-block;
+            position: relative;
+            margin: 0 30px;
+            width: 64px;
+            height: 32px;
+            border-radius: 50px;
+            cursor: pointer;
+
+            .ball {
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: $color-pure-black;
+                border-radius: 50%;
+                top: 3px;
+                left: 3px;
+                transition: transform 0.4s ease;
+                transition: transform 0.4s ease,
+            }
+        }
+
+        #toggle {
+            position: absolute;
+            left: -9999px;
+
+            &:checked+label .ball {
+                transform: translateX(30px);
+            }
+        }
+    }
+
+    .price-container {
+        padding: 0 1.2rem;
+
+        @include media('>tabletBig') {
+            .btn {
+                width: 20vw;
+            }
+        }
+
+        .price {
+            background: $color-dark-grey;
+            height: 410px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            h3 {
+                font-size: $font-size-v3;
+                text-transform: capitalize;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                color: $color-para-color-2;
+                padding: 0 2rem 1rem;
+                text-align: center;
+                line-height: 1.5rem;
+            }
+
+            .pricing {
+                span {
+                    font-size: $font-size-v1;
+                    font-weight: $fw-700;
+                    letter-spacing: 2.5px;
+                }
+            }
+
+            .yearly {
+                display: none;
+            }
+
+            @include media('>tabletBig') {
+                width: 280px;
+                height: 380px;
+                margin-right: 1rem;
+            }
+
+            @include media('>smallDesktop') {
+                width: 350px;
+                height: 410px;
+                margin-right: 1rem;
+            }
+
+        }
+
+        .bg-black {
+            background: $color-pure-black;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 5px;
+                background: $color-gradient;
+            }
+
+            .btn {
+                background: $color-white;
+                color: $color-pure-black;
+                outline: none;
+                border: 1px solid $color-white;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $color-white;
+                    border: 1px solid $color-white;
+                }
+            }
+
+            h3,
+            p,
+            span {
+                color: $color-white;
+            }
+
+            @include media('>tabletBig') {
+                height: 420px;
+                width: 290px;
+            }
+
+            @include media('>smallDesktop') {
+                height: 470px;
+                width: 350px;
+            }
+        }
+
+        @include media('>tabletBig') {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+        }
+    }
+
+}
+
+
+
+.compare-container {
+    padding: 2rem 1.5rem;
+
+    .compare {
+
+        h4 {
+            font-size: $font-size-v2;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .plan {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $color-pure-black;
+            padding: 1rem 0;
+
+            &-desc {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid $color-light-grey;
+                padding-bottom: 1rem;
+
+                span {
+                    text-align: left;
+                    width: 100px;
+                    font-size: $font-size-v7;
+                    text-transform: uppercase;
+                    font-weight: $fw-700;
+                    padding-top: 1rem;
+                }
+
+                img {
+                    width: 16px;
+                    height: 12px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+
+    @include media('>tabletBig') {
+        padding: 2rem 10rem;
+    }
+
+    @include media('>smallDesktop') {
+        padding: 2rem 15rem;
+    }
+}
