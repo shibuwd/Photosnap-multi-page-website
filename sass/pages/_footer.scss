@@ -23,14 +23,14 @@
 
         li {
             a {
-                filter: brightness(0) invert(1);
+                // filter: brightness(0) invert(1);
                 -webkit-filter: brightness(0) invert(1);
+                filter: brightness(0) invert(1);
                 transition: .6s cubic-bezier(0.12, 0, 0.39, 0);
 
                 &:hover,
                 &:focus {
                     filter: brightness(1) invert(0);
-                    -webkit-filter: brightness(1) invert(0);
                 }
             }
         }
